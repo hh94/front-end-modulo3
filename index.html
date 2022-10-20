@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Blog</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <script src="https://kit.fontawesome.com/a5fa9cbe03.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400&family=BIZ+UDPMincho&family=Cuprum&family=Fasthand&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/inicio.css?v=0.0.1">
+
+  <link rel="stylesheet" href="styles.css">
+  
+
+</head>
+
+
+<body>
+
+  <div class="bobody">
+    <app-root></app-root>
+  </div>
+
+<!-------------------------------------------------------js-------------------------------------------->
+
+
+<script>
+  
+  // cierra cuando clikea fuera de la ventana
+  window.addEventListener("click", function(event) {
+  // Get the modal
+  var modal = document.getElementById('id01');
+  var modal2 = document.getElementById('id02');
+      if (event.target == modal || event.target == modal2 ) {
+          modal.style.display = "none";
+          modal2.style.display = "none";
+      }
+  })
+
+
+//----------------------------------------------mostrar y ocultar------------------------------------------------
+
+function mostrar() {
+      var x = document.getElementById("esconder");
+      var x1 = document.getElementById("esconder1");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+        x1.style.display = "block";
+      } else {
+        x.style.display = "none";
+        x1.style.display = "none";
+      }
+    }
+    function mostrar1() {
+      var x2 = document.getElementById("esconder2");
+      var x3 = document.getElementById("esconder3");
+      if (x2.style.display === "none") {
+        x2.style.display = "block";
+        x3.style.display = "block";
+      } else {
+        x2.style.display = "none";
+        x3.style.display = "none";
+      }
+    }
+    //--------------------------------------------------password-------------------------------------------------
+    function myFunction() {
+      var x = document.getElementById("myInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+
+    function myFunction1() {
+      var x = document.getElementById("myInput1");
+      var x2 = document.getElementById("myInput2");
+      if (x.type === "password") {
+        x.type = "text";
+        x2.type = "text";
+      } else {
+        x.type = "password";
+        x2.type = "password";
+      }
+    }
+    
+//--------------------------------------------------modificar texto-------------------------------------------------
+// function cambiarParrafo(){
+// document.getElementById("edit-acercade").style.display="block";
+// let texto = document.getElementById("text-acercade").innerText;
+// console.log(texto);
+// };
+
+// function cambiarParrafo1(){
+// document.getElementById("edit-acercade1").style.display="block";
+// let texto1 = document.getElementById("text-acercade1").innerText;
+// console.log(texto1);
+// };
+
+// function cambiarParrafo2(){
+// document.getElementById("edit-acercade2").style.display="block";
+// let texto2 = document.getElementById("text-acercade2").innerText;
+// console.log(texto2);
+// };
+// function cambiarParrafo3(){
+// document.getElementById("edit-acercade3").style.display="block";
+// let texto3 = document.getElementById("text-acercade3").innerText;
+// console.log(texto3);
+// };
+
+// function cambiarTexto(valor){
+// document.getElementById("text-acercade").innerText=valor;
+// };
+
+// function cambiarTexto1(valor){
+// document.getElementById("text-acercade1").innerText=valor;
+// };
+
+// function cambiarTexto2(valor){
+// document.getElementById("text-acercade2").innerText=valor;
+// };
+// function cambiarTexto3(valor){
+// document.getElementById("text-acercade3").innerText=valor;
+// };
+
+
+
+
+// function logMessage(message){
+// console.log(message + "<br>");
+// }
+// //controla si se presiono un enter
+// let textarea=document.getElementById("edit-acercade")
+// let textarea1=document.getElementById("edit-acercade1")
+// let textarea2=document.getElementById("edit-acercade2")
+// let textarea3=document.getElementById("edit-acercade3")
+
+// textarea.addEventListener('keyup', (e) => {
+// logMessage('Key "${e.key}" released [event: keyup]');
+// if (e.key=="Enter"){
+// document.getElementById("edit-acercade").style.display="none"
+// }
+// })
+// textarea1.addEventListener('keyup', (e) => {
+// logMessage('Key "${e.key}" released [event: keyup]');
+// if (e.key=="Enter"){
+// document.getElementById("edit-acercade1").style.display="none"
+// }
+// })
+// textarea2.addEventListener('keyup', (e) => {
+// logMessage('Key "${e.key}" released [event: keyup]');
+// if (e.key=="Enter"){
+// document.getElementById("edit-acercade2").style.display="none"
+// }
+// })
+// textarea3.addEventListener('keyup', (e) => {
+// logMessage('Key "${e.key}" released [event: keyup]');
+// if (e.key=="Enter"){
+// document.getElementById("edit-acercade3").style.display="none"
+// }
+// })
+// ;
+
+</script>
+
+</body>
+</html>
