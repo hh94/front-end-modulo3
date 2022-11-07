@@ -1,0 +1,42 @@
+<!-------------------------------------------------------------------2do--cuerpo--------------------------------------------->
+<div class="container1"> 
+    <div>
+        <span><button class="mostrar" style="float: right;" onclick="mostrar1()"><i class="fa-solid fa-plus-minus"></i></button></span>
+        
+        <i class="fa-solid fa-pencil mostrar" onclick="cambiarParrafo2()"></i> <!--boton cambiar-->
+
+        <h2>Educación</h2>
+
+        <div id="esconder2">
+            <div>
+                <img src="{{miEducacion.educacion.escuela}}" alt="" id="text-acercade2" style="max-width: 150px;"><p>{{miEducacion.educacion.cursos}}</p>
+            </div>
+
+            <div>
+                <input type="text" name="" id="edit-acercade2" oninput=" cambiarTexto2(this.value)" style="display:none">
+            </div>
+        </div>
+    </div>
+<hr>
+    <div>
+        <i class="fa-solid fa-pencil mostrar" onclick="cambiarParrafo3()"></i> <!--boton cambiar-->
+
+        <h2>Tipos de Lenguaje  (proximamente)</h2>
+        
+
+        <div id="esconder3">
+            <div class="coluPro">
+                <ul class="list-group list-group-flush"  *ngFor="let tiposL of miLenguaje"  style="background-color: rgba(0, 0, 0, 0);" >
+                    <div>
+                        <li  class="list-group list-group-flush"><img src="{{tiposL.img}}" alt="" style="max-width: 70px;"></li>
+                    </div>
+                    <li  class="list-group list-group-flush"><p style="margin-left: 30px;"> {{tiposL.lenguaje}}</p></li>
+                </ul>
+            </div>
+
+            <div>
+                <input type="text" name="" id="edit-acercade3" oninput=" cambiarTexto3(this.value)" style="display:none">
+            </div>
+        </div>
+    </div>
+</div>

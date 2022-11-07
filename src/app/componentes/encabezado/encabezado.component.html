@@ -1,0 +1,48 @@
+<!-------------------------------------------top-bottom-----cabecera------------------------------------->
+
+    <div style="float: right; margin: 0 1cm;">
+        <a href="#end" class="btn-mov" style="bottom: 80px;">
+            <i class="fa-solid fa-angles-down"></i>
+        </a>
+        <a href="#top" class="btn-mov" style="bottom: 150px;">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+    </div>
+
+    <div>
+        <img src="{{urlImg1}}" alt="" class="encabezado">
+        <img src="{{urlImg2}}" alt="usuario.png" class="usuario">
+    </div>    
+
+<div class="grid-container">
+
+    <div>
+        <i class="fa-solid fa-pencil mostrar" onclick="cambiarParrafo1()"></i> <!--boton cambiar-->
+        <div>
+            <h1>{{miEncabezado.nombre}} </h1>
+            <h3>{{miEncabezado.ubicacion.ciudad}}</h3>
+            <h3>{{miEncabezado.ubicacion.localidad}}</h3>
+            <br>
+        </div>
+                
+            <div id="esconder">
+                <p id="text-acercade1">{{miEncabezado.acercaP}}</p>
+                <input type="text" name="" id="edit-acercade1" oninput=" cambiarTexto1(this.value)" style="display:none">
+            </div>
+    </div>
+    
+    <div>
+        <span><button class="mostrar" style="float: right;" onclick="mostrar()"><i class="fa-solid fa-plus-minus"></i> </button></span>  <!--boton mostrar-->
+        <i class="fa-solid fa-pencil mostrar" onclick="cambiarParrafo()"></i>  <!--boton cambiar-->
+        <h2>Acerca de mi </h2>
+        <br>
+        
+        <div id="esconder1">
+            <p id="text-acercade">{{miEncabezado.acercaT}} </p>
+        </div>
+        <div>
+            <input type="text" name="" id="edit-acercade" oninput=" cambiarTexto(this.value)" style="display:none">
+        </div>
+    </div>
+
+</div>
